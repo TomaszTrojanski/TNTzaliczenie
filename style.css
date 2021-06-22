@@ -10,6 +10,8 @@ header {
     background-image: url("page/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .mainpage {
@@ -35,6 +37,8 @@ header {
 .rightside {
     display: flex;
     flex-direction: row;
+    width: auto;
+    height: 50px;
 }
 
 .linki {
@@ -59,12 +63,37 @@ header {
     display: block !important;
 }
 
+.menuburgerdwa {
+    display: none;
+}
+
 @media (max-width:1060px) {
     .menuburger {
         display: block !important;
         font-size: 50px;
     }
+    .menuburgerdwa {
+        color: white;
+        padding: 30px;
+    }
     .linki {
         display: none;
+    }
+    .menu_a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        padding: 40px 20px;
+        margin: 0 10px;
+    }
+    .linki {
+        position: absolute;
+        left: 0;
+        background: black;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        top: 0;
     }
 }
