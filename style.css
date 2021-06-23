@@ -75,7 +75,23 @@ header {
 .omnie {
     color: black;
     margin: 20px 0;
-    font-size: large;
+    font-size: x-large;
+}
+
+@media (max-width:1700px) {
+    .omnie {
+        color: black;
+        margin: 20px 0;
+        font-size: larger;
+    }
+}
+
+@media (max-width:1500px) {
+    .omnie {
+        color: black;
+        margin: 20px 0;
+        font-size: large;
+    }
 }
 
 .blokoferty {
@@ -239,7 +255,7 @@ footer h2 {
     }
 }
 
-@media (max-width:1060px) {
+@media (max-width:1100px) {
     .menuburger {
         display: block !important;
         font-size: 50px;
@@ -267,5 +283,49 @@ footer h2 {
         height: 100vh;
         text-align: center;
         top: 0;
+    }
+}
+
+@media (max-width:800px) {
+    .motto {
+        font-size: 20px;
+    }
+    #fizjo {
+        width: 60%;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-content {
+        display: none;
+    }
+    .right-content {
+        width: 80%;
+    }
+    .down-content {
+        width: 80%;
+    }
+    .down-content h2 {
+        color: white;
+    }
+    .omnie {
+        color: white;
+    }
+    .boldspan {
+        color: white;
+    }
+    .oferty {
+        box-sizing: border-box;
+    }
+    .footer-paterns-space {
+        display: none;
+    }
+    .all-footer {
+        padding-bottom: 5vw;
+        margin: 0 auto;
+    }
+    .content {
+        padding-top: 55vh;
     }
 }
