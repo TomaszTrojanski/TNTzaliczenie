@@ -296,6 +296,9 @@ footer h2 {
     header {
         flex-direction: column;
         align-items: center;
+        background-image: url("page/bg_tab.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .left-content {
         display: none;
@@ -327,5 +330,15 @@ footer h2 {
     }
     .content {
         padding-top: 55vh;
+    }
+}
+
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        background-image: url("page/bg_smw.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
