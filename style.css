@@ -52,29 +52,49 @@ header {
     width: 100%;
     /* padding: 10px; */
     background: url("page/bg2.jpg");
-    background-size: auto;
-    height: 100vh;
+    background-size: cover;
+    min-height: 1200px;
     max-height: fit-content;
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
 
 .left-content {
-    flex-basis: 50%;
+    flex-basis: 60%;
+}
+
+.down-content {
+    width: 20vw;
+}
+
+.down-content h2 {
+    color: black;
+    font-size: 40px;
 }
 
 .omnie {
-    color: grey;
+    color: black;
     margin: 20px 0;
+    font-size: large;
+}
+
+.blokoferty {
+    background: url("page/bg3.jpg");
+    min-height: 500px;
+}
+
+.blokoferty h2 {
+    color: black;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
 }
 
 .oferta {
-    max-width: 1920px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    margin: 50px 0;
-    background: url("page/bg3.jpg");
+    justify-content: space-around;
     background-size: cover;
     background-repeat: no-repeat;
     flex-wrap: wrap;
@@ -107,23 +127,35 @@ header {
     text-align: center;
 }
 
+.footer-organizer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .footer-paterns {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     color: white;
     flex-direction: column;
     width: 500px;
+}
+
+.footer-paterns-space {
+    flex-basis: 75%;
+    display: block;
 }
 
 .footer-patern {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    min-height: 300px;
     margin: 20px 0 50px;
 }
 
 .footer-logo {
-    height: 142px;
+    height: 200px;
     margin: 0 20px;
 }
 
@@ -136,11 +168,12 @@ footer {
     background: url("page/bg4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 700px;
+    min-height: 900px;
     margin-top: 100px;
+    width: 100%;
 }
 
-h2 {
+footer h2 {
     color: white;
     font-size: 40px;
     font-style: italic;
@@ -163,7 +196,7 @@ h2 {
 
 .right-content {
     display: flex;
-    -content: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -186,6 +219,24 @@ h2 {
 
 .menuburgerdwa {
     display: none;
+}
+
+.all-footer {
+    padding-top: 5vh;
+    display: block;
+    font-size: 25px;
+}
+
+@media (min-width:1400px) {
+    .motto {
+        font-size: 70px;
+    }
+}
+
+@media (min-width:1600px) {
+    .motto {
+        font-size: 80px;
+    }
 }
 
 @media (max-width:1060px) {
